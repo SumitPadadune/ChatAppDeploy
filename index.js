@@ -26,7 +26,7 @@ app.get('/', (req,res)=>{
   res.send("This is Backend Route")
 })
 
-// // --------------------------deployment------------------------------
+// --------------------------deployment------------------------------
 
 const __dirname1 = path.resolve();
 
@@ -42,9 +42,9 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// // --------------------------deployment------------------------------
+// --------------------------deployment------------------------------
 
-// // Error Handling middlewares
+// Error Handling middlewares
 app.use(notFound);
 app.use(errorHandler);
 
@@ -58,8 +58,8 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://chat-app-frontend-2pigf92ja-sumits-projects-58f40f31.vercel.app",
-    // credentials: true,
+    origin: "http://localhost:3000",
+    credentials: true,
   },
 });
 
