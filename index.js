@@ -59,7 +59,7 @@ const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
     origin:  [
-      "http://localhost:3000",
+      "http://10.40.6.98:3000",
       "https://chat-app-frontend-xi-six.vercel.app",
       "https://chat-app-frontend-git-main-sumits-projects-58f40f31.vercel.app",
       "https://chat-app-frontend-50xzlysbx-sumits-projects-58f40f31.vercel.app"
